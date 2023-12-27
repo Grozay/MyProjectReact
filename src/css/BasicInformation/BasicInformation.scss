@@ -1,0 +1,51 @@
+.BasicInformation_container {
+    margin: 2% 20%;
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    color: #000000;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+            &.error {
+                border: 1px solid red;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &.error:focus {
+                border-color: red;
+            }
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
+    }
+}

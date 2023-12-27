@@ -1,0 +1,12 @@
+.undernav_container{
+        background-color: bisque;
+        // position: sticky;
+        bottom: 0;
+        width: 100%;
+        /* padding: 10px;  */
+        z-index: 1000; 
+        .undernav_list{
+            margin-left: 55%;
+            display: flex;
+        }
+}

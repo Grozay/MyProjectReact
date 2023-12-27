@@ -1,0 +1,90 @@
+.image-upload-container{
+    display: flex;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 5px;
+    margin: 20px auto;
+    .move {cursor: move;}
+
+    .drop-area {
+        min-width: 47px;
+        height: 47px;
+        padding: 0.8rem;
+        text-align: center;
+        cursor: pointer;
+        background-color: #fff;
+        color: #000;
+        border: 2px dashed #ccc;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        p {
+            margin: 0;
+            font-size: 0.8rem;
+        }
+    }
+
+    .image-container {
+        position: relative;
+        display: inline-block;
+        
+
+
+        .file-preview {
+            width: 75px;
+            height: 75px;
+            object-fit: cover;
+        }
+
+        .edit-button, .delete-button {
+            position: absolute;
+            width: 50%;
+            color: rgb(0, 0, 0);
+            border: none;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    
+        .edit-button {
+            bottom: 0;
+            left: 0;
+        }
+    
+        .delete-button {
+            bottom: 0;
+            right: 0;
+        }
+    
+        &:hover .edit-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            opacity: 1;
+        }
+    
+        &:hover .delete-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            opacity: 1;
+        }
+    
+
+    }
+    .name_choosefile{
+        position: absolute;
+        font-size: 5px;
+        top: 248px;
+    }
+    .image-count{
+        position: absolute;
+        font-size: 10px;
+        top: 240px;
+    }
+}
+
