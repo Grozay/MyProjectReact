@@ -1,0 +1,130 @@
+.classification_input{
+    position: relative;
+    max-width: 235px;
+    &.dragging {
+        opacity: 0.7;
+      }
+      .error-message{
+        color: red;
+        font-size: 10px;
+        margin-left: 35px;
+    }
+.classification_input_list{
+    display: flex;
+    margin-left: 30px;
+        .character-count {
+            position: absolute;
+            font-size: 14px;
+            right: 0;
+            color: rgba(100, 100, 100, 0.5);
+        }
+        .character-count1 {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            font-size: 14px;
+            color: rgba(100, 100, 100, 0.5);
+        }
+    
+}
+
+    .classification_input_contaier{
+        transition: margin 0.3s ease-in-out;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5px;
+        .input-error {
+            border: 1px solid red; /* Đặt viền màu đỏ */
+            &.error {
+                border: 1px solid red;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &.error:focus {
+                border-color: red;
+            }
+        }
+        label {
+            margin-right: 10px;
+        }
+
+        input {
+            margin-right: 5px;
+            height: 25px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid black;
+
+        }
+
+    }
+
+
+    .classification_input_2{
+        display: flex;   
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5px;
+        input {
+            margin-right: 5px;
+            height: 25px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+        label {
+            margin-right: 10px;
+        }
+        .input-error {
+            border: 1px solid red; /* Đặt viền màu đỏ */
+            &.error {
+                border: 1px solid red;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &.error:focus {
+                border-color: red;
+            }
+        }
+    }
+
+    .classification_btn_contaier{
+        display: flex;
+        button {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+            border: none;
+            background-color: none;
+
+            i:hover {
+                background-color: #eaeaea;
+                color: #000000;
+            }
+
+            i {
+                color: #858585;
+            }
+        }
+        .button-disabled {
+            cursor: not-allowed; /* Hiệu ứng con trỏ chuột cấm */
+            opacity: 0.5; /* Làm mờ nút để chỉ ra rằng nó không hoạt động */
+        }
+    }
+
+}
+.label_classification{
+    position: absolute;
+    top: 10px;
+    left: -95px;
+}

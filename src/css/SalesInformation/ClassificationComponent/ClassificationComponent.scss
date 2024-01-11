@@ -1,0 +1,52 @@
+.input_container{
+  .between{
+    height: 30px;
+  }
+  position: relative;
+    .input_container_list1{
+      margin-left: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; // 2 cột với kích thước bằng nhau
+        grid-gap: 5px; // khoảng cách giữa các grid ite
+        .delete_input_all1{
+            margin-left: 85%;
+            margin-top: 1.5%;
+            position: absolute;
+       }
+       .add_classify{
+        position: absolute;
+        top: 0;
+        left: 110px;
+        width: 205px;
+        height: 35px;
+        border-radius: 5px;
+        // border-right: dashed;  
+        &hover{
+          border: 1px solid orangered;
+        }
+       }  
+       .add_classify2{
+        margin-left: 40px;
+        width: 205px;
+        height: 27px;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+       .title_inputcontainer{
+        position: absolute;
+        left: 0;
+       }
+       .delete_input_all2{
+        margin-left: 85%;
+        margin-top: 1.5%;
+        position: absolute;
+     }
+
+    }
+      
+      .first-classification {
+        grid-column: 1 / -1;
+        width: 300px; // Cho phần tử đầu tiên chiếm cả hai cột
+      }
+
+}
